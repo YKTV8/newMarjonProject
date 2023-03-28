@@ -8,7 +8,7 @@ html{
     height: 100%;
 }
 header{
-    background-color: rgba(113, 150, 70, 0.99);
+    background-color: rgba(0, 0, 0, 0.99);
     color: black;
     font-weight: 600;
     width: 100%;
@@ -52,13 +52,14 @@ section{
 }
 .statement{
     text-align: center;
+    font-size: 150%;
     border-top: 2px solid black;
 }
 .donateNow{
     display: flex;
     flex-direction: row;
     text-align: left;
-    background-color: coral;
+    background-color: rgb(107, 101, 99);
 }
 .donateNow h2, p{
     display: flex;
@@ -66,7 +67,7 @@ section{
 }
 .textbox{
     margin: 5%;
-}
+} 
 img{
     height: 300px;
     width: 400px;
@@ -76,7 +77,30 @@ article{
     padding: 8% 8%;
     border: 2px black solid;
 }
+/* div classes for slideshow a tags */
+.event{
+    margin: 1%;
+    height: fit-content;
+    width: fit-content;
+    background-image: url(./images/20221219_231837\ \(1\).jpg);
+
+}
+.project{
+
+}
+.hbcc{
+
+}
+.about{
+
+}
+.contact{
+
+}
 footer{
+    color: aliceblue;
+    text-align: center;
     height: 35vh;
-    background-color: rgba(113, 150, 70, 0.7);
+    background-color: rgba(0, 0, 0, 0.99);
+    padding-top: 10%;
 }
