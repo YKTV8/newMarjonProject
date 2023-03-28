@@ -1,10 +1,11 @@
 /* All HTML style code */
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
 }
 html{
     overflow-x: hidden;
+    height: 100%;
 }
 header{
     background-color: rgba(113, 150, 70, 0.99);
@@ -46,8 +47,32 @@ main{
     background-position-y:10% ;
     background-image: url(./images/20220822_132729\ \(1\).jpg);
 }
+section{
+    padding: 5%;
+}
+.statement{
+    text-align: center;
+    border-top: 2px solid black;
+}
+.donateNow{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: coral;
+}
+.donateNow h2, p{
+    display: flex;
+    flex-direction: column;
+}
+.textbox{
+    margin: 5%;
+}
+img{
+    height: 300px;
+    width: 400px;
+}
 article{
-    margin: 5% 30%;
+    margin: 5% 30% 0% 30%;
     padding: 8% 8%;
     border: 2px black solid;
 }
