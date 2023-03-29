@@ -198,3 +198,115 @@ footer{
     background-color: rgba(0, 0, 0, 0.99);
     padding-top: 10%;
 }
+@-ms-viewport{
+    width: device-width;
+  }
+  /* font size */
+  @media screen and (max-width: 1680px) {
+   
+    
+  }
+  @media screen and (max-width: 1280px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    
+  }
+  @media screen and (max-width: 736px) {
+    
+  }
+  @media screen and (max-width: 480px) {
+    header, nav{
+        height: 20%;
+    }
+    #navbar, ul, li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+    }
+    .hero h2{
+        font-size: 110%;
+        padding-top: 65%;
+        height: fit-content;
+        width: fit-content;
+    }
+    article .event{
+        color: aliceblue;
+        /* height: 400px;
+        width: 400px; */
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        /* height: 400px;
+        width: 400px; */
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
+  }
+  /* orientation: portrait */
+  @media screen and (orientation:portrait) {
+    
+  }
+  @media screen and (orientation: portrait) and (max-width:480px) {
+    
+  }
