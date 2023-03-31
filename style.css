@@ -13,7 +13,7 @@ header{
     padding-left: 2%;
     font-weight: 600;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     position: fixed;
 }
 header ul, li{
@@ -41,9 +41,9 @@ main{
     width: 100%;
     /* background-color: #1d724266; */
     background: rgb(29, 114, 66);
-background: -moz-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
-background: -webkit-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
-background: linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
+    background: -moz-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
+    background: -webkit-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
+    background: linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
 }
 .hero{
     width: 100vw;
@@ -57,7 +57,7 @@ background: linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
     z-index:0;
 }
 .hero h2{
-    width: 20%;
+    /* width: 20%; */
     color: aliceblue;
     text-align: center;
     padding-top: 15%;
@@ -131,9 +131,9 @@ article{
 }
 article .event{
     color: aliceblue;
-    /* height: 400px;
-    width: 400px; */
-    margin: 5% 30% 0% 30%;
+    height: 400px;
+    width: 400px;
+    margin: 5% 0% 0% 0%;
     padding: 8% 8%;
     border: 2px black solid;
     background-image: url(./images/20221219_231837\ \(1\).jpg);
@@ -144,9 +144,9 @@ article .event{
 }
  article .project{
     color: aliceblue;
-    /* height: 400px;
-    width: 400px; */
-    margin: 5% 30% 0% 30%;
+    height: 400px;
+    width: 400px;
+    margin: 5% 0% 0% 0%;
     padding: 8% 8%;
     border: 2px black solid;
     background-image: url(./images/FB_IMG_1672898786766.jpg);
@@ -156,9 +156,9 @@ article .event{
 }
  article .hbcc{
     color: aliceblue;
-    /* height: 400px;
-    width: 400px; */
-    margin: 5% 30% 0% 30%;
+    height: 400px;
+    width: 400px;
+    margin: 5% 0% 0% 0%;
     padding: 8% 8%;
     border: 2px black solid;
     background-image: url(./images/FB_IMG_1668756535627.jpg);
@@ -168,8 +168,8 @@ article .event{
 }
  article .about{
     color: aliceblue;
-    /* height: 400px;
-    width: 400px; */
+    height: 400px;
+    width: 400px;
     margin: 5% 30% 0% 30%;
     padding: 8% 8%;
     border: 2px black solid;
@@ -203,21 +203,384 @@ footer{
   }
   /* font size */
   @media screen and (max-width: 1680px) {
-   
-    
-  }
-  @media screen and (max-width: 1280px) {
-    #navbar{
+    header{
+        height: 15%;
+    }
+    #navbar, ul, li{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+    .hero h2{
+        font-size: 180%;
+        padding-top: 35%;
+        height: fit-content;
+        width: fit-content;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article .event{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    header{
+        height: 15%;
+    }
+    #navbar, ul, li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hero h2{
+        font-size: 110%;
+        padding-top: 35%;
+        height: fit-content;
+        width: fit-content;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article .event{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
   }
   @media screen and (max-width: 980px) {
-    
+    header{
+        height: 15%;
+    }
+    #navbar, ul, li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hero h2{
+        font-size: 110%;
+        padding-top: 35%;
+        height: fit-content;
+        width: fit-content;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article .event{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
   }
   @media screen and (max-width: 736px) {
-    
+    header{
+        height: 15%;
+    }
+    #navbar, ul, li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .hero h2{
+        font-size: 110%;
+        padding-top: 35%;
+        height: fit-content;
+        width: fit-content;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    article .event{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        height: 350px;
+        width: 350px;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
   }
   @media screen and (max-width: 480px) {
     header, nav{
@@ -308,5 +671,8 @@ footer{
     
   }
   @media screen and (orientation: portrait) and (max-width:480px) {
+    header{
+        height: 15%;
+    }
     
   }
