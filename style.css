@@ -15,6 +15,7 @@ header{
     width: 100%;
     height: 15vh;
     position: fixed;
+    z-index: 2;
 }
 header ul, li{
     display: flex;
@@ -35,15 +36,23 @@ a:hover{
 main{
     height: 100%;
     width:100%;
+    background-image: url(./images/295512773_10160629099758463_7470758663384172625_n.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:top;
+    
+    
 }
 .coversection{
     height: 510%;
     width: 100%;
     /* background-color: #1d724266; */
-    background: rgb(29, 114, 66);
+    /* background: rgb(29, 114, 66);
     background: -moz-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
     background: -webkit-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
     background: linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
+    opacity: .5; */
 }
 .hero{
     width: 100vw;
@@ -54,7 +63,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 8px white solid;
-    z-index:0;
+    z-index:-1;
+    opacity: .8;
 }
 .hero h2{
     /* width: 20%; */
@@ -71,6 +81,8 @@ section{
     text-align: center;
     font-size: 150%;
     border-top: 2px solid black;
+    background-color: aliceblue;
+    opacity: .8;
 }
 .donateNow{
     display: flex;
@@ -181,6 +193,8 @@ article .event{
 }
 article .contact{
     color: aliceblue;
+    height: 400px;
+    width: 400px;
     margin: 5% 30% 0% 30%;
     padding: 8% 8%;
     border: 2px black solid;
@@ -202,13 +216,16 @@ footer{
     width: device-width;
   }
   /* font size */
-  @media screen and (max-width: 1680px) {
+  @media screen and (max-width: 3680px) {
     header{
         height: 15%;
     }
+    a{
+        font-size: 2.5rem;
+    }
     #navbar, ul, li{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     .hero h2{
@@ -224,8 +241,8 @@ footer{
     }
     article .event{
         color: aliceblue;
-        height: 350px;
-        width: 350px;
+        height: 80vh;
+        width: 40vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -237,8 +254,8 @@ footer{
     }
      article .project{
         color: aliceblue;
-        height: 350px;
-        width: 350px;
+        height: 80vh;
+        width: 40vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -249,8 +266,8 @@ footer{
     }
      article .hbcc{
         color: aliceblue;
-        height: 350px;
-        width: 350px;
+        height: 80vh;
+        width: 40vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -262,8 +279,8 @@ footer{
     }
      article .about{
         color: aliceblue;
-        height: 350px;
-        width: 350px;
+        height: 80vh;
+        width: 40vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -275,8 +292,8 @@ footer{
     }
     article .contact{
         color: aliceblue;
-        height: 350px;
-        width: 350px;
+        height: 80vh;
+        width: 40vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -300,6 +317,9 @@ footer{
   @media screen and (max-width: 1280px) {
     header{
         height: 15%;
+    }
+    a{
+        font-size: 1.5rem;
     }
     #navbar, ul, li{
         display: flex;
@@ -396,6 +416,9 @@ footer{
     header{
         height: 15%;
     }
+    a{
+        font-size: 1.5rem;
+    }
     #navbar, ul, li{
         display: flex;
         flex-direction: column;
@@ -491,9 +514,12 @@ footer{
     header{
         height: 15%;
     }
+    a{
+        font-size: 1.5rem;
+    }
     #navbar, ul, li{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     .hero h2{
