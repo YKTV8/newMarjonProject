@@ -6,6 +6,10 @@
 html{
     overflow-x: hidden;
     height: 100%;
+    width: 100%;
+}
+body{
+    width: 100%;
 }
 header{
     background-color: rgba(0, 0, 0, 0.99);
@@ -13,7 +17,7 @@ header{
     padding-left: 2%;
     font-weight: 600;
     width: 100%;
-    height: 15vh;
+    height: fit-content;
     position: fixed;
     z-index: 2;
 }
@@ -24,6 +28,18 @@ header ul, li{
     align-self: center;
     list-style-type: none;
     padding: 0.5% 5%;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    background-color: white;
 }
 a{
     color: aquamarine;
@@ -46,13 +62,12 @@ main{
 }
 .coversection{
     height: 510%;
-    width: 100%;
+    width: 100vw;
     /* background-color: #1d724266; */
-    /* background: rgb(29, 114, 66);
+    background: rgb(29, 114, 66);
     background: -moz-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
     background: -webkit-linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
     background: linear-gradient(45deg, #1D7242 0%, #B8FFCC 100%);
-    opacity: .5; */
 }
 .hero{
     width: 100vw;
@@ -64,7 +79,6 @@ main{
     background-size: cover;
     border-bottom: 8px white solid;
     z-index:-1;
-    opacity: .8;
 }
 .hero h2{
     /* width: 20%; */
@@ -85,10 +99,13 @@ section{
     opacity: .8;
 }
 .donateNow{
+    height: 150%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     text-align: left;
     background-color: rgb(107, 101, 99);
+    border-radius: 40px;
 }
 .donateNow h2, p{
     display: flex;
@@ -208,9 +225,9 @@ article .contact{
 footer{
     color: aliceblue;
     text-align: center;
-    height: 35vh;
+    height: 25vh;
     background-color: rgba(0, 0, 0, 0.99);
-    padding-top: 10%;
+    padding-top: 5%;
 }
 @-ms-viewport{
     width: device-width;
@@ -218,7 +235,7 @@ footer{
   /* font size */
   @media screen and (max-width: 3680px) {
     header{
-        height: 15%;
+        height: fit-content;
     }
     a{
         font-size: 2.5rem;
@@ -230,9 +247,9 @@ footer{
     }
     .hero h2{
         font-size: 180%;
-        padding-top: 35%;
+        padding-top: 25%;
         height: fit-content;
-        width: fit-content;
+        width: 60%;
     }
     section{
         display: flex;
@@ -316,7 +333,7 @@ footer{
   }
   @media screen and (max-width: 1280px) {
     header{
-        height: 15%;
+        height: fit-content;
     }
     a{
         font-size: 1.5rem;
@@ -328,7 +345,7 @@ footer{
     }
     .hero h2{
         font-size: 110%;
-        padding-top: 35%;
+        padding-top: 25%;
         height: fit-content;
         width: fit-content;
     }
@@ -414,7 +431,7 @@ footer{
   }
   @media screen and (max-width: 980px) {
     header{
-        height: 15%;
+        height: fit-content;
     }
     a{
         font-size: 1.5rem;
@@ -426,7 +443,7 @@ footer{
     }
     .hero h2{
         font-size: 110%;
-        padding-top: 35%;
+        padding-top: 25%;
         height: fit-content;
         width: fit-content;
     }
@@ -511,8 +528,33 @@ footer{
     }
   }
   @media screen and (max-width: 736px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    #navbar{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        left: 0;
+    }
     header{
-        height: 15%;
+        height: fit-content;
     }
     a{
         font-size: 1.5rem;
@@ -609,8 +651,8 @@ footer{
     }
   }
   @media screen and (max-width: 480px) {
-    header, nav{
-        height: 20%;
+    header{
+        height: fit-content;
     }
     #navbar, ul, li{
         display: flex;
@@ -625,8 +667,8 @@ footer{
     }
     article .event{
         color: aliceblue;
-        /* height: 400px;
-        width: 400px; */
+        height: 40vh;
+        width: 60vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -638,8 +680,8 @@ footer{
     }
      article .project{
         color: aliceblue;
-        /* height: 400px;
-        width: 400px; */
+        height: 40vh;
+        width: 60vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -650,6 +692,8 @@ footer{
     }
      article .hbcc{
         color: aliceblue;
+        height: 40vh;
+        width: 60vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -661,6 +705,8 @@ footer{
     }
      article .about{
         color: aliceblue;
+        height: 40vh;
+        width: 60vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -672,6 +718,8 @@ footer{
     }
     article .contact{
         color: aliceblue;
+        height: 40vh;
+        width: 60vw;
         margin: 5% 0% 0% 0%;
         padding: 8% 8%;
         border: 2px black solid;
@@ -682,12 +730,129 @@ footer{
         transition: 2.5s ease-in ;
         animation-timing-function: ease-in;
     }
-    .donateNow{
+    .donateNow .imagebox{
+        height: 40vh;
+        width: 60vw;
+        background-image: url(./images/20220808_203934\ \(1\).jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /* .donateNow{
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
+    } */
     .imagebox{
+        margin-top: 5%;
+        background-position-x: center;
+    }
+  }
+  /* smaller mobile breakpoint */
+  @media screen and (max-width: 479px) {
+    header{
+        height: fit-content;
+    }
+    #navbar, ul, li{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;  
+    }
+    .hero{
+        background-position-x: right;
+        background-position-y:top ;
+    }
+    .hero h2{
+        font-size: 110%;
+        padding-top: 85%;
+        height: fit-content;
+        width: fit-content;
+    }
+    a{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .7rem;
+    }
+    article .event{
+        color: aliceblue;
+        height: 40vh;
+        width: 80vw;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/20221219_231837\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.697);
+        transition: all 0.5s ease-in-out;
+    }
+     article .project{
+        color: aliceblue;
+        height: 40vh;
+        width: 80vw;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1672898786766.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .hbcc{
+        color: aliceblue;
+        height: 40vh;
+        width: 80vw;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1668756535627.jpg);
+        background-size: cover;
+        background-position-y:35% ;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+    }
+     article .about{
+        color: aliceblue;
+        height: 40vh;
+        width: 80vw;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1671378994942.jpg);
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+        animation-timing-function: ease-in;
+    }
+    article .contact{
+        color: aliceblue;
+        height: 40vh;
+        width: 80vw;
+        margin: 5% 0% 0% 0%;
+        padding: 8% 8%;
+        border: 2px black solid;
+        background-image: url(./images/FB_IMG_1664683421091.jpg);
+        background-position-y: 15%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 2.5s ease-in ;
+        animation-timing-function: ease-in;
+    }
+    .donateNow .imagebox{
+        margin-top: 20%;
+        height: 40vh;
+        width: 65vw;
+        background-image: url(./images/20220808_203934\ \(1\).jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /* .donateNow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } */
+    .imagebox{
+        height: 20%;
         margin-top: 5%;
         background-position-x: center;
     }
@@ -698,7 +863,7 @@ footer{
   }
   @media screen and (orientation: portrait) and (max-width:480px) {
     header{
-        height: 15%;
+        height: fit-content;
     }
     
   }
