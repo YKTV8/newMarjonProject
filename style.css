@@ -552,7 +552,7 @@ footer{
         background-position-x: center;
     }
   }
-  @media screen and (max-width: 736px) {
+  @media screen and (max-width: 763px) {
     header{
         height: fit-content;
     }
@@ -664,18 +664,19 @@ footer{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 28px;
+        top: 35px;
         gap: 0px;
         flex-direction: column;
         width: 100%;
         background-color: #000000cf;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.9s;
     }
     .nav-item{
         margin: 16px 0;
     }
     .nav-menu.active{
+        margin-top: 52px;
         left: 0;
     }
   }
