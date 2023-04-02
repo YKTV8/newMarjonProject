@@ -13,3 +13,21 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+// hamburger active selector
+
+// const hamburger = document.querySelector('.hamburger');
+// const navBar = document.querySelector('#navbar');
+
+// hamburger.addEventListener('click', () => {
+//   hamburger.classList.toggle('active');
+//   navbar.classList.toggle('active');
+// })
+
+// testcss
+const hamburger = document.querySelector('.hamburger');
+const navBar = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navBar.classList.toggle('active');
+})
