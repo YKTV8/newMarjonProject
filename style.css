@@ -112,6 +112,24 @@ main{
     padding-top: 15%;
     z-index: 1;
 }
+.hero1{
+    width: 100vw;
+    height: 80vh;
+    background-position: 10%;
+    background-position-y:10% ;
+    background-image: url(./images/294831577_417054027132478_3671109476816063510_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px white solid;
+    z-index:-1;
+}
+.hero1 h2{
+    /* width: 20%; */
+    color: aliceblue;
+    text-align: center;
+    padding-top: 15%;
+    z-index: 1;
+}
 section{
     padding: 5%;
     transition: all 0.5s ease-in-out;
@@ -276,6 +294,12 @@ footer{
         height: fit-content;
         width: 60%;
     }
+    .hero1 h2{
+        font-size: 180%;
+        padding-top: 25%;
+        height: fit-content;
+        width: 60%;
+    }
     section{
         display: flex;
         justify-content: center;
@@ -369,6 +393,12 @@ footer{
         flex-wrap: wrap;
     }
     .hero h2{
+        font-size: 110%;
+        padding-top: 25%;
+        height: fit-content;
+        width: fit-content;
+    }
+    .hero1 h2{
         font-size: 110%;
         padding-top: 25%;
         height: fit-content;
@@ -472,6 +502,12 @@ footer{
         height: fit-content;
         width: fit-content;
     }
+    .hero1 h2{
+        font-size: 110%;
+        padding-top: 25%;
+        height: fit-content;
+        width: fit-content;
+    }
     section{
         display: flex;
         justify-content: center;
@@ -565,6 +601,12 @@ footer{
         flex-wrap: wrap;
     }
     .hero h2{
+        font-size: 110%;
+        padding-top: 35%;
+        height: fit-content;
+        width: fit-content;
+    }
+    .hero1 h2{
         font-size: 110%;
         padding-top: 35%;
         height: fit-content;
@@ -695,6 +737,12 @@ footer{
         height: fit-content;
         width: fit-content;
     }
+    .hero1 h2{
+        font-size: 110%;
+        padding-top: 65%;
+        height: fit-content;
+        width: fit-content;
+    }
     article .event{
         color: aliceblue;
         height: 40vh;
@@ -792,6 +840,16 @@ footer{
         background-position-y:top ;
     }
     .hero h2{
+        font-size: 110%;
+        padding-top: 85%;
+        height: fit-content;
+        width: fit-content;
+    }
+    .hero1{
+        background-position-x: center;
+        background-position-y: top ;
+    }
+    .hero1 h2{
         font-size: 110%;
         padding-top: 85%;
         height: fit-content;
